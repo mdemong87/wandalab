@@ -1,0 +1,405 @@
+ @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=IBM+Plex+Mono:wght@200;300;400;500;600;700&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Noto+Serif+Bengali:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&family=Roboto+Mono:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&family=Rum+Raisin&family=Sora:wght@100;200;300;400;500;600;700;800&family=Syne+Mono&display=swap');
+
+
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ :root {
+     --primaryColor: #9333ea;
+     --primaryFontColor: #fff;
+     --secondaryFontColor: #98a4bb;
+     --primaryBg: #070d22;
+     --secondaryBg: #14192c;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+
+ body {
+     background: var(--primaryBg);
+     font-family: 'Roboto', sans-serif;
+ }
+
+
+ /* swiper js css code start from here */
+ .swiper {
+     width: 100%;
+     height: fit-content;
+     padding: 20px 0px;
+     color: var(--primaryFontColor);
+     z-index: -1;
+ }
+
+ .swiper-slide {
+     border: 1px solid var(--primaryColor);
+     background: var(--secondaryBg);
+     text-align: center;
+     padding: 10px;
+     border-radius: 10px;
+ }
+
+ /* swiper js css code end from here */
+
+ .container {
+     width: 80%;
+     margin: auto;
+     height: 100%;
+ }
+
+
+
+ /* header section css code start from here */
+
+ .header {
+     height: 70px;
+     border-bottom: 1px solid #272727;
+     display: flex;
+     align-items: center;
+     position: sticky;
+     top: 0;
+     background: var(--primaryBg);
+ }
+
+ .headerWrp {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 100%;
+ }
+
+ .headerLogoWrp {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .justlogoWrp {
+     background: var(--primaryColor);
+     border-radius: 7px;
+     width: 60px;
+     height: 50px;
+ }
+
+ .headerLogoWrp>h2 {
+     color: var(--primaryFontColor);
+ }
+
+ .logo {
+
+     width: 120px;
+     padding: 20px;
+     margin-left: -30px;
+     transform: translateY(-27px);
+ }
+
+ /* /nabver section css code start from here */
+ .navberUl {
+     list-style: none;
+     display: flex;
+     align-items: center;
+     gap: 20px;
+
+ }
+
+ .navberUl>li {
+     padding: 7px 12px;
+ }
+
+ .navberUl>li>a {
+     color: var(--primaryFontColor);
+     font-size: 18px;
+     font-weight: 600;
+     text-decoration: none;
+     text-transform: capitalize;
+ }
+
+ .actionBtn {
+     background: var(--primaryColor);
+     border-radius: 7px;
+     padding: 10px 24px;
+     color: var(--primaryFontColor);
+     font-size: 16px;
+     font-weight: 600;
+     cursor: pointer;
+ }
+
+
+
+
+ /* main section css code start from here */
+ .main {}
+
+
+
+
+
+ /* use-cases section css code start from here */
+ .use-cases {
+     margin-top: 70px;
+ }
+
+ .usesCasesWrp>h1 {
+     font-size: 45px;
+     color: var(--primaryFontColor);
+ }
+
+ .usesCasesWrp>p {
+     font-size: 18px;
+     color: var(--secondaryFontColor);
+     padding-top: 10px;
+     padding-bottom: 40px;
+ }
+
+ .casesWrp {
+     display: flex;
+     gap: 20px;
+     width: 100%;
+     color: var(--primaryFontColor);
+     margin-bottom: 50px;
+     overflow-x: hidden;
+     height: fit-content;
+     flex-wrap: wrap;
+
+ }
+
+ .casesWrp>div:last-child {
+     background: var(--primaryColor);
+ }
+
+ .casesWrp>div {
+     border: 1px solid var(--primaryColor);
+     padding: 10px 20px;
+     border-radius: 10px;
+     width: fit-content;
+     cursor: pointer;
+     background: var(--secondaryBg);
+ }
+
+ /* hero section css code start from hrer */
+ .heroWrp {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 30px 0px;
+ }
+
+ .heroWrp>div {
+     width: 100% !important;
+ }
+
+ .herotext>h1 {
+     color: var(--primaryFontColor);
+     font-size: 70px !important;
+ }
+
+ .herotext>p {
+     color: var(--secondaryFontColor);
+     padding-bottom: 40px;
+     font-size: 20px;
+ }
+
+ .heroImage {
+     width: 500px;
+     height: 370px;
+ }
+
+
+
+
+ /* servises section css code start from here */
+ .servisesWrp {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     color: var(--primaryFontColor);
+     gap: 20px;
+     padding-bottom: 40px;
+ }
+
+ .servisesWrp>div {
+     border-radius: 5px;
+     background: var(--secondaryBg);
+     height: 260px;
+     display: grid;
+     grid-template-rows: .7fr 1fr;
+     padding: 15px;
+     text-align: center;
+ }
+
+ .servisesTextWrp {
+     padding: 10px 0px;
+ }
+
+ .servisesTextWrp>p {
+     padding-top: 8px;
+     color: var(--secondaryFontColor);
+     font-size: 17px;
+ }
+
+ .servisesIconsWrp {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: var(--primaryColor);
+ }
+
+ .servisesIcons {
+     font-size: 35px;
+ }
+
+ /* recovary fast section css code start from here */
+ .recovaryFast {
+     background: var(--secondaryBg);
+ }
+
+ .recovaryWrp {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 15px;
+ }
+
+ .recovaryWrp>div {
+     width: 100%;
+ }
+
+ .failsimage {
+     width: 400px;
+     height: 350px;
+     margin: 30px 0px;
+ }
+
+ .failsText>h1 {
+     color: var(--primaryFontColor);
+     font-size: 45px;
+ }
+
+ .failsText>p {
+     color: var(--secondaryFontColor);
+     font-size: 18px;
+     padding-top: 20px;
+ }
+
+ .failsPBold {
+     color: var(--secondaryFontColor);
+     font-size: 21px;
+     font-weight: 600;
+     padding-bottom: 30px;
+ }
+
+ .failsPBold>b {
+     color: var(--primaryColor);
+ }
+
+ /* footer section css code start from here */
+ .footer {
+     padding: 20px 0px;
+ }
+
+ .footerWrp {
+     display: flex;
+     justify-content: space-between;
+     padding-bottom: 20px;
+ }
+
+ .footerWrp>div {
+     width: 100%;
+     padding: 20px 0px;
+ }
+
+ .footerWrp>div>h3 {
+     color: var(--secondaryFontColor);
+     font-size: 18px;
+     padding-bottom: 25px;
+ }
+
+ .footerWrp>div>ul>li {
+     padding: 10px 0px;
+ }
+
+ .footerWrp>div>ul>li>a {
+     color: var(--secondaryFontColor);
+     font-size: 15px;
+ }
+
+ .footerWrp>div>ul>li>a:hover {
+     color: var(--primaryColor) !important;
+ }
+
+ .footerLogoWrp {
+     display: flex;
+     gap: 10px;
+ }
+
+ .footerLogoWrp>h2 {
+     color: var(--primaryFontColor);
+     font-size: 40px;
+ }
+
+ .newsInputWrp>input {
+     background: var(--secondaryBg);
+     outline: none;
+     border: none;
+     color: var(--primaryFontColor);
+     padding: 10px;
+     width: 100%;
+     border-radius: 8px;
+     font-size: 16px;
+ }
+
+ .footererviseIconsWrp {
+     display: flex;
+     justify-content: space-evenly;
+     margin-left: -20px !important;
+     align-items: center;
+     transform: translateY(-25px);
+     width: 90%;
+ }
+
+ .footerSeriveseIcons {
+     color: var(--primaryColor);
+     font-size: 35px;
+     color: var(--secondaryFontColor);
+ }
+
+ .newsInputWrp>button {
+     margin-top: 15px;
+     background: var(--primaryColor);
+     outline: none;
+     border: none;
+     color: var(--primaryFontColor);
+     padding: 10px;
+     width: 100%;
+     border-radius: 8px;
+     font-size: 16px;
+     cursor: pointer;
+ }
+
+ .sitelogoandserviselogowrp {
+     display: flex;
+     flex-direction: column;
+     gap: 50px;
+ }
+
+ .bottomFooter {
+     border-top: 1px solid #272727;
+     text-align: center;
+     padding-top: 25px;
+     padding-bottom: 10px;
+     color: var(--secondaryFontColor);
+ }
+
+ .developer {
+     color: var(--primaryColor);
+ }
+
+ .footerLogo {
+     width: 300px;
+     transform: rotate(2deg);
+     margin-left: -38px !important;
+ }
